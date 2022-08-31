@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661979075976,
+  "lastUpdate": 1661980179709,
   "repoUrl": "https://github.com/ruivieira/trustyai-explainability-python",
   "entries": {
     "TrustyAI continuous benchmarks": [
@@ -135,6 +135,51 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.03340608329239158",
             "extra": "mean: 599.7166156768799 msec\nrounds: 10"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ruidevieira@googlemail.com",
+            "name": "Rui Vieira",
+            "username": "ruivieira"
+          },
+          "committer": {
+            "email": "ruidevieira@googlemail.com",
+            "name": "Rui Vieira",
+            "username": "ruivieira"
+          },
+          "distinct": true,
+          "id": "2cedc0e80d6ed63074b8be020af943b71954fb82",
+          "message": "Disable fail on alert",
+          "timestamp": "2022-08-31T21:48:22+01:00",
+          "tree_id": "9e879c553192833cb16836faabdaf4209bb0dd39",
+          "url": "https://github.com/ruivieira/trustyai-explainability-python/commit/2cedc0e80d6ed63074b8be020af943b71954fb82"
+        },
+        "date": 1661980178866,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmarks/benchmark.py::test_counterfactual_match",
+            "value": 0.816177417649649,
+            "unit": "iter/sec",
+            "range": "stddev: 0.013373835288311526",
+            "extra": "mean: 1.2252238035202025 sec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/benchmark.py::test_non_empty_input",
+            "value": 6.936400431170063,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0030276228853839946",
+            "extra": "mean: 144.16699409484863 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/benchmark.py::test_counterfactual_match_python_model",
+            "value": 1.607904027430986,
+            "unit": "iter/sec",
+            "range": "stddev: 0.004100060924786048",
+            "extra": "mean: 621.9276666641235 msec\nrounds: 10"
           }
         ]
       }
