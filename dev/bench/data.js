@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1661956744621,
+  "lastUpdate": 1661958265629,
   "repoUrl": "https://github.com/ruivieira/trustyai-explainability-python",
   "entries": {
     "Python Benchmark with pytest-benchmark": [
@@ -107,6 +107,53 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.010149443156504448",
             "extra": "mean: 779.8657417297363 msec\nrounds: 5"
+          }
+        ]
+      }
+    ],
+    "TrustyAI continuous benchmarks": [
+      {
+        "commit": {
+          "author": {
+            "email": "ruidevieira@googlemail.com",
+            "name": "Rui Vieira",
+            "username": "ruivieira"
+          },
+          "committer": {
+            "email": "ruidevieira@googlemail.com",
+            "name": "Rui Vieira",
+            "username": "ruivieira"
+          },
+          "distinct": true,
+          "id": "39bd3cd2948b7bf837df4070a52174cc5bf6ca9c",
+          "message": "Increase running iterations",
+          "timestamp": "2022-08-31T16:01:14+01:00",
+          "tree_id": "4428312af57a5b2d7926ebf8fd9d734e158e747d",
+          "url": "https://github.com/ruivieira/trustyai-explainability-python/commit/39bd3cd2948b7bf837df4070a52174cc5bf6ca9c"
+        },
+        "date": 1661958265199,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "tests/benchmarks/benchmark.py::test_counterfactual_match",
+            "value": 0.7916396829080582,
+            "unit": "iter/sec",
+            "range": "stddev: 0.018392602911241663",
+            "extra": "mean: 1.2632009506225585 sec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/benchmark.py::test_non_empty_input",
+            "value": 6.728353204919972,
+            "unit": "iter/sec",
+            "range": "stddev: 0.002217022169027971",
+            "extra": "mean: 148.62477779388428 msec\nrounds: 10"
+          },
+          {
+            "name": "tests/benchmarks/benchmark.py::test_counterfactual_match_python_model",
+            "value": 1.5912871468335548,
+            "unit": "iter/sec",
+            "range": "stddev: 0.009904776299913176",
+            "extra": "mean: 628.4220933914185 msec\nrounds: 10"
           }
         ]
       }
